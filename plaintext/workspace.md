@@ -41,6 +41,10 @@ https://ovofast.com/#/dashboard
 
 ## [scoop]
 
+```pwsh
+scoop export > .\plaintext\workspace.json
+```
+
 ### choose dir (admin)
 ```
 $env:SCOOP='D:\develop\scoop'
