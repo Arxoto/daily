@@ -27,6 +27,10 @@ CTX = Context(True)
 
 def source_files():
     folder_path = os.path.join(CTX.cwd, CTX.source_folder)
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+    if not os.path.isdir(folder_path):
+        raise Exception(f"{folder_path} not folder")
     for file in os.listdir(folder_path):
         yield (file, os.path.join(folder_path, file))
 
@@ -55,6 +59,11 @@ def decrypt(bb: bytes, key: bytes):
 def do_action(source: str, target: str):
     logger.info(">>>>>>>>> %s", source)
     try:
+        target_folder = os.path.dirname(target)
+        if not os.path.exists(target_folder):
+            os.makedirs(target_folder)
+        if os.path.exists(target) and not os.path.isfile(target):
+            raise Exception(f"{target} not file")
         if CTX.encrypt:
             with open(source, "rb") as sf:
                 bts = encrypt(sf.read(), CTX.encrypt_key)
