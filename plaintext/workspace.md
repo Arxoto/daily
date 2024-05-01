@@ -68,6 +68,10 @@ shutdown -r -t 0
 ```
 
 ```
+scoop config proxy localhost:7898
+git config --global https.proxy 'socks5://localhost:7898'
+git config --global http.proxy 'socks5://localhost:7898'
+
 scoop install git
 scoop bucket add extras
 scoop bucket add java
