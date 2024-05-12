@@ -20,6 +20,7 @@ rmvb
 wmv
 m3u
 m3u8
+ts
 vlc
 """
 

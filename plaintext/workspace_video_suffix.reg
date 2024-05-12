@@ -66,6 +66,9 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\.m3u8]
 @="CustomVideoPlayer"
 
+[HKEY_CLASSES_ROOT\.ts]
+@="CustomVideoPlayer"
+
 [HKEY_CLASSES_ROOT\.vlc]
 @="CustomVideoPlayer"
 
@@ -133,6 +136,9 @@ Windows Registry Editor Version 5.00
 @="CustomVideoPlayer"
 
 [HKEY_LOCAL_MACHINE\Software\Classes\.m3u8]
+@="CustomVideoPlayer"
+
+[HKEY_LOCAL_MACHINE\Software\Classes\.ts]
 @="CustomVideoPlayer"
 
 [HKEY_LOCAL_MACHINE\Software\Classes\.vlc]
