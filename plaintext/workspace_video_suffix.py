@@ -21,6 +21,7 @@ wmv
 m3u
 m3u8
 ts
+VOB
 vlc
 """
 

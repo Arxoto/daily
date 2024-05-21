@@ -69,6 +69,9 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\.ts]
 @="CustomVideoPlayer"
 
+[HKEY_CLASSES_ROOT\.VOB]
+@="CustomVideoPlayer"
+
 [HKEY_CLASSES_ROOT\.vlc]
 @="CustomVideoPlayer"
 
@@ -139,6 +142,9 @@ Windows Registry Editor Version 5.00
 @="CustomVideoPlayer"
 
 [HKEY_LOCAL_MACHINE\Software\Classes\.ts]
+@="CustomVideoPlayer"
+
+[HKEY_LOCAL_MACHINE\Software\Classes\.VOB]
 @="CustomVideoPlayer"
 
 [HKEY_LOCAL_MACHINE\Software\Classes\.vlc]
