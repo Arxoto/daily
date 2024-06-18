@@ -1,0 +1,566 @@
+{
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main",
+            "Updated": "2024-06-18T20:31:15+08:00",
+            "Manifests": 1327
+        },
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": "2024-06-18T20:34:10+08:00",
+            "Manifests": 2037
+        },
+        {
+            "Name": "versions",
+            "Source": "https://github.com/ScoopInstaller/Versions",
+            "Updated": "2024-06-18T20:48:46+08:00",
+            "Manifests": 463
+        },
+        {
+            "Name": "nerd-fonts",
+            "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
+            "Updated": "2024-06-16T04:21:22+08:00",
+            "Manifests": 336
+        },
+        {
+            "Name": "nonportable",
+            "Source": "https://github.com/TheRandomLabs/scoop-nonportable",
+            "Updated": "2024-06-12T03:05:14+08:00",
+            "Manifests": 80
+        },
+        {
+            "Name": "java",
+            "Source": "https://github.com/ScoopInstaller/Java",
+            "Updated": "2024-06-09T00:19:27+08:00",
+            "Manifests": 280
+        },
+        {
+            "Name": "dorado",
+            "Source": "https://github.com/chawyehsu/dorado",
+            "Updated": "2024-06-18T08:13:07+08:00",
+            "Manifests": 259
+        }
+    ],
+    "apps": [
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "7zip",
+            "Updated": "2024-05-27T23:00:42.8659051+08:00",
+            "Version": "24.06"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "adb",
+            "Updated": "2024-03-07T23:00:43.6841251+08:00",
+            "Version": "35.0.0"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "aria-ng-gui",
+            "Updated": "2022-04-17T16:14:36.9900067+08:00",
+            "Version": "3.1.2"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "Audacity",
+            "Updated": "2024-04-27T23:13:03.9450493+08:00",
+            "Version": "3.5.1"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "cheat-engine",
+            "Updated": "2022-05-02T20:37:47.4225421+08:00",
+            "Version": "7.4"
+        },
+        {
+            "Info": "Held package",
+            "Source": "extras",
+            "Name": "clash-verge-rev",
+            "Updated": "2024-06-18T16:40:17.9233368+08:00",
+            "Version": "1.6.6"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "cmake",
+            "Updated": "2024-06-18T16:36:39.041624+08:00",
+            "Version": "3.29.6"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "curl",
+            "Updated": "2024-06-13T23:00:42.4244294+08:00",
+            "Version": "8.8.0_2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "dark",
+            "Updated": "2024-02-24T23:00:48.0907+08:00",
+            "Version": "3.14"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "dismplusplus",
+            "Updated": "2023-05-03T23:01:01.3108902+08:00",
+            "Version": "10.1.1002.1B"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "driverstoreexplorer",
+            "Updated": "2023-01-04T23:00:35.2437073+08:00",
+            "Version": "0.11.92"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "everything",
+            "Updated": "2023-05-26T23:35:11.5902033+08:00",
+            "Version": "1.4.1.1024"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "ffmpeg",
+            "Updated": "2024-05-27T23:01:35.5423521+08:00",
+            "Version": "7.0.1"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "freemove",
+            "Updated": "2022-04-17T16:13:22.4369951+08:00",
+            "Version": "2.1.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "gcc",
+            "Updated": "2024-01-15T23:00:23.1713503+08:00",
+            "Version": "13.2.0"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "geekuninstaller",
+            "Updated": "2023-09-08T00:06:25.1951658+08:00",
+            "Version": "1.5.2.165"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "git",
+            "Updated": "2024-06-04T23:01:59.4092494+08:00",
+            "Version": "2.45.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "go",
+            "Updated": "2024-06-05T23:01:25.6339815+08:00",
+            "Version": "1.22.4"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "gsudo",
+            "Updated": "2024-05-31T23:00:41.0026408+08:00",
+            "Version": "2.5.1"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "hasher",
+            "Updated": "2024-06-15T11:00:28.5419485+08:00",
+            "Version": "4.2"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "inkscape",
+            "Updated": "2023-07-24T23:06:07.8880094+08:00",
+            "Version": "1.3_2023-07-21_0e150ed6c4"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "innounp",
+            "Updated": "2022-07-13T20:41:11.6741355+08:00",
+            "Version": "0.50"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "keyviz",
+            "Updated": "2023-09-09T14:38:45.2050748+08:00",
+            "Version": "1.0.6"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "krita",
+            "Updated": "2023-12-09T23:11:59.4521046+08:00",
+            "Version": "5.2.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "lessmsi",
+            "Updated": "2024-05-07T23:00:33.1293202+08:00",
+            "Version": "2.0.1"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "memreduct",
+            "Updated": "2022-04-17T16:13:22.9533183+08:00",
+            "Version": "3.4"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "mingw",
+            "Updated": "2024-01-13T23:01:22.0450402+08:00",
+            "Version": "13.2.0-rt_v11-rev1"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "moonlight",
+            "Updated": "2024-06-06T23:00:37.1722333+08:00",
+            "Version": "6.0.0"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "motrix",
+            "Updated": "2023-05-04T23:09:18.4341628+08:00",
+            "Version": "1.8.19"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "mpv",
+            "Updated": "2024-04-25T23:10:34.5789313+08:00",
+            "Version": "0.38.0"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "mpv.net",
+            "Updated": "2024-02-03T23:14:27.4976693+08:00",
+            "Version": "7.1.1.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "n-m3u8dl-cli",
+            "Updated": "2022-09-28T00:29:10.3449371+08:00",
+            "Version": "3.0.2"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "neatdownloadmanager",
+            "Updated": "2022-07-13T20:42:16.4182961+08:00",
+            "Version": "1.4"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "neeview",
+            "Updated": "2024-06-18T21:12:14.5133336+08:00",
+            "Version": "41.2"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "nodejs",
+            "Updated": "2024-06-12T23:00:42.5683373+08:00",
+            "Version": "22.3.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "nssm",
+            "Updated": "2023-01-26T17:25:27.9908203+08:00",
+            "Version": "2.24-103"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "obs-studio",
+            "Updated": "2024-05-26T23:34:10.5056503+08:00",
+            "Version": "30.1.2"
+        },
+        {
+            "Info": "",
+            "Source": "java",
+            "Name": "openjdk17",
+            "Updated": "2023-04-14T00:22:24.1271515+08:00",
+            "Version": "17.0.2-8"
+        },
+        {
+            "Info": "",
+            "Source": "java",
+            "Name": "openjdk8-redhat",
+            "Updated": "2023-04-14T00:22:24.1311513+08:00",
+            "Version": "8u342-b07"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "picview",
+            "Updated": "2024-06-18T21:13:29.8793048+08:00",
+            "Version": "2.2.7"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "pnpm",
+            "Updated": "2024-06-18T16:36:53.5622174+08:00",
+            "Version": "9.4.0"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "python",
+            "Updated": "2024-06-07T23:01:31.0746027+08:00",
+            "Version": "3.12.4"
+        },
+        {
+            "Info": "",
+            "Source": "versions",
+            "Name": "python27",
+            "Updated": "2023-04-14T00:22:24.1401521+08:00",
+            "Version": "2.7.18"
+        },
+        {
+            "Info": "",
+            "Source": "versions",
+            "Name": "python311",
+            "Updated": "2024-04-03T23:48:01.6713259+08:00",
+            "Version": "3.11.9"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "qbittorrent-enhanced",
+            "Updated": "2024-06-18T16:38:00.8262381+08:00",
+            "Version": "4.6.5.10"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "qtscrcpy",
+            "Updated": "2024-04-08T23:01:08.9631076+08:00",
+            "Version": "2.2.1"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "rustup-msvc",
+            "Updated": "2024-05-07T23:04:23.3244259+08:00",
+            "Version": "1.27.1"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "scrcpy",
+            "Updated": "2024-03-03T11:00:46.6689426+08:00",
+            "Version": "2.4"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "screentogif",
+            "Updated": "2024-03-25T23:19:03.2257156+08:00",
+            "Version": "2.41"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "sharex",
+            "Updated": "2024-05-12T23:00:39.1634369+08:00",
+            "Version": "16.1.0"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "shotcut",
+            "Updated": "2024-04-29T23:18:49.5601498+08:00",
+            "Version": "24.04.28"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "sing-box",
+            "Updated": "2024-06-10T23:00:48.8854686+08:00",
+            "Version": "1.9.3"
+        },
+        {
+            "Info": "",
+            "Source": "dorado",
+            "Name": "snipaste-beta",
+            "Updated": "2024-05-08T23:11:12.241258+08:00",
+            "Version": "2.9.1-Beta"
+        },
+        {
+            "Info": "",
+            "Source": "dorado",
+            "Name": "steampp",
+            "Updated": "2022-12-21T23:00:39.1265613+08:00",
+            "Version": "2.8.6"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "sudo",
+            "Updated": "2022-04-17T16:09:25.315954+08:00",
+            "Version": "0.2020.01.26"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "sumatrapdf",
+            "Updated": "2023-11-29T23:02:13.5571487+08:00",
+            "Version": "3.5.2"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "sunshine",
+            "Updated": "2024-04-24T23:11:24.8780064+08:00",
+            "Version": "0.23.1"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "telegram",
+            "Updated": "2024-06-15T11:00:40.473194+08:00",
+            "Version": "5.1.7"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "v2ray",
+            "Updated": "2024-05-04T23:54:03.1419568+08:00",
+            "Version": "5.16.1"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "v2rayn",
+            "Updated": "2024-05-24T23:00:31.6794363+08:00",
+            "Version": "6.45"
+        },
+        {
+            "Info": "Held package",
+            "Source": "extras",
+            "Name": "vcredist2005",
+            "Updated": "2022-04-17T17:05:38.5303517+08:00",
+            "Version": "8.0.61001"
+        },
+        {
+            "Info": "Held package",
+            "Source": "extras",
+            "Name": "vcredist2008",
+            "Updated": "2022-04-17T17:05:38.5303517+08:00",
+            "Version": "9.0.30729.6161"
+        },
+        {
+            "Info": "Held package",
+            "Source": "extras",
+            "Name": "vcredist2010",
+            "Updated": "2022-04-17T17:05:38.5303517+08:00",
+            "Version": "10.0.40219.473"
+        },
+        {
+            "Info": "Held package",
+            "Source": "extras",
+            "Name": "vcredist2012",
+            "Updated": "2023-07-19T00:44:46.6258946+08:00",
+            "Version": "11.0.61030.0"
+        },
+        {
+            "Info": "Held package",
+            "Source": "extras",
+            "Name": "vcredist2013",
+            "Updated": "2023-07-19T00:44:46.6348874+08:00",
+            "Version": "12.0.40664.0"
+        },
+        {
+            "Info": "Held package",
+            "Source": "extras",
+            "Name": "vcredist2022",
+            "Updated": "2024-02-16T15:41:36.4059663+08:00",
+            "Version": "14.38.33135.0"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "vlc",
+            "Updated": "2024-06-12T00:14:05.4165184+08:00",
+            "Version": "3.0.21"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "wiztree",
+            "Updated": "2024-03-05T23:01:02.4470402+08:00",
+            "Version": "4.19"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "xray",
+            "Updated": "2024-06-18T16:37:00.9259066+08:00",
+            "Version": "1.8.15"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "youtube-dl",
+            "Updated": "2022-04-17T16:13:40.8355286+08:00",
+            "Version": "2021.12.17"
+        },
+        {
+            "Info": "",
+            "Source": "extras",
+            "Name": "youtube-dl-gui",
+            "Updated": "2023-02-28T23:13:32.5094967+08:00",
+            "Version": "1.8.5"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "yt-dlp",
+            "Updated": "2024-05-28T23:01:09.7589082+08:00",
+            "Version": "2024.05.27"
+        },
+        {
+            "Info": "Global install, Held package",
+            "Source": "nerd-fonts",
+            "Name": "SarasaGothic-SC",
+            "Updated": "2024-03-15T12:47:36.1373361+08:00",
+            "Version": "1.0.5"
+        },
+        {
+            "Info": "Global install, Held package",
+            "Source": "nerd-fonts",
+            "Name": "UbuntuMono-NF-Propo",
+            "Updated": "2024-03-15T12:47:36.1529686+08:00",
+            "Version": "3.1.1"
+        }
+    ]
+}
