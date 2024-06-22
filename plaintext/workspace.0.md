@@ -13,7 +13,7 @@ https://ovofast.com/#/dashboard
 - OfficeTool or https://github.com/OdysseusYuan/LKY_OfficeTools
 - IDM + https://github.com/lstprjct/IDM-Activation-Script  可用 NDM 代替
 - ~~ HoneyView + Bandizip ~~  现在压缩包软件安装界面有广告不喜欢 【压缩包里连续看图】
-- 也可以考虑 PicView + 7z or NeeView
+- 也可以考虑 NeeView （还有一个叫 picview 实际体验不是很好）
 - ~~ MouseWithoutBordersSetup ~~
 
 

@@ -108,7 +108,8 @@ scoop install clash-verge-rev v2rayn telegram discord # or https://discord.com/a
 
 # book picture
 # extras/
-scoop install neeview picview # sumatrapdf
+scoop install neeview # sumatrapdf
+# picview 使用体验不是很好 官网说和7z配合能实现压缩包看图 但实际有问题？
 
 # video
 # main/
