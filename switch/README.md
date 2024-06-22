@@ -26,6 +26,28 @@ P.S. 固件也可以从这里获取 https://github.com/THZoria/NX_Firmware/relea
 download from
 - https://www.gamer520.com/
 
+mods and cheats
+- 前提 游戏版本 金手指版本/mod版本 要一致
+- 模拟器中右键游戏 打开 MOD 目录
+- mod 直接解压在该目录即可
+- 金手指路径参考 suyu\load\id\可自定义的金手指名称\cheats\txt
+  - txt 有多个文件的话一般是多个版本号一起打包的 仅保留一个
+  - 文件内容可根据需要进行修改、拆分
+  - 模拟器中右键游戏 属性 勾选需要的金手指
+
+amiibo
+- 可选 模拟-设置-控制-高级-其他-RandomAmiiboId
+- amiibo bin 文件直接拖入模拟器中
+
+联机
+- 模拟-设置-系统-网络-选择对应的连接方式（ wifi 为 WLAN ）
+- 多人游戏-公共房间
+- 修改昵称
+- 选择一个房间（高亮选中即可）后关闭该窗口
+- 开始游戏
+
+## Game Pack
+
 包处理工具
 - https://github.com/julesontheroad/NSC_BUILDER
 - fill prod.keys in NSCB\ztools\keys.txt
