@@ -4,9 +4,17 @@
   - from the creators of Citra and written in C++
   - https://github.com/yuzu-emu/
   - https://yuzu-mirror.github.io/
-- Suyu 柚子（秽土转生版）
-  - https://suyu.dev/
-  - https://github.com/suyu-emu/suyu/releases
+
+- Yuzu 分支（秽土转生版）
+  - Sudachi 【推荐】实测帧率稳定一点
+    - https://sudachi.emuplace.app/
+    - https://github.com/sudachi-emu/sudachi
+  - Suyu 开发组不稳定
+    - https://suyu.dev/
+    - https://github.com/suyu-emu/suyu
+  - Torzu
+    - https://github.com/litucks/torzu
+
 - Ryujinx 龙神
   - created by gdkchan and written in C#
   - https://ryujinx.org/
@@ -31,7 +39,7 @@ mods and cheats
 - 模拟器中右键游戏 打开 MOD 目录
 - mod 直接解压在该目录即可
 - 金手指路径参考 suyu\load\id\可自定义的金手指名称\cheats\txt
-  - txt 有多个文件的话一般是多个版本号一起打包的 仅保留一个
+  - txt 有多个文件的话一般是多个版本号一起打包的 仅保留一个（最开头有初始化代码的话需要保留）
   - 文件内容可根据需要进行修改、拆分
   - 模拟器中右键游戏 属性 勾选需要的金手指
 
