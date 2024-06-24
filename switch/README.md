@@ -7,6 +7,7 @@
 
 - Yuzu 分支（秽土转生版）
   - Sudachi 【推荐】实测帧率稳定一点
+    - https://sudachi-emu.com/
     - https://sudachi.emuplace.app/
     - https://github.com/sudachi-emu/sudachi
   - Suyu 开发组不稳定
@@ -38,10 +39,14 @@ mods and cheats
 - 前提 游戏版本 金手指版本/mod版本 要一致
 - 模拟器中右键游戏 打开 MOD 目录
 - mod 直接解压在该目录即可
-- 金手指路径参考 suyu\load\id\可自定义的金手指名称\cheats\txt
+- 金手指路径参考 yuzu\load\id\可自定义的金手指名称\cheats\txt
   - txt 有多个文件的话一般是多个版本号一起打包的 仅保留一个（最开头有初始化代码的话需要保留）
   - 文件内容可根据需要进行修改、拆分
   - 模拟器中右键游戏 属性 勾选需要的金手指
+- sudachi 实测好像金手指不生效 不知是否是配置导致
+- 龙神金手指使用方法
+  - 关闭着色器缓存 options>settings>system>enable pptc
+  - 在每一个需要的代码前面加上 `580F0000 04616BF8` （其他生效的项的第一行代码）
 
 amiibo
 - 可选 模拟-设置-控制-高级-其他-RandomAmiiboId
