@@ -35,6 +35,17 @@ P.S. 固件也可以从这里获取 https://github.com/THZoria/NX_Firmware/relea
 download from
 - https://www.gamer520.com/
 
+基础设置
+- 图形
+  - API  ( Vulkan )
+  - Resolution 分辨率  ( 1X )  画质性能影响较大 自己取舍
+  - WindowAdaptingFilter 窗口滤镜  ( Bilinear 双线性 | AMD_FidelityFX )  对画质影响自己测试
+- 图形高级
+  - ASTC_RecompressionMethod 纹理重压缩  ( BC3 )  经测试对画质影响不大 性能自信可以选中不压缩
+- 每个游戏右键可打开着色器缓存 玩的越久缓存越多越流畅
+  - vulkan.bin 文件可替换 不随环境改变 PC、模拟器版本、模拟器设置等 实测还是要替换的 可能是跨大版本了
+  - vulkan_pipelines.bin 文件 每次更新版本或设置后需要删除重建
+
 mods and cheats
 - 前提 游戏版本 金手指版本/mod版本 要一致
 - 模拟器中右键游戏 打开 MOD 目录
