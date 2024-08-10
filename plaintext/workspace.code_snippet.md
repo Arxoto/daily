@@ -20,7 +20,7 @@ workspace
 			"mod tests {",
 			"    use super::*;",
 			"",
-			"$0",
+			"    $0",
 			"}",
 			""
 		],
@@ -31,10 +31,10 @@ workspace
 		"prefix": "test_fn",
 		"body": [
 			"",
-			"    #[test]",
-			"    fn ${1:test_func}() {",
-			"        $0",
-			"    }",
+			"#[test]",
+			"fn ${1:test_func}() {",
+			"    $0",
+			"}",
 			""
 		],
 		"description": ""
