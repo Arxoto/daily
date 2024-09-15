@@ -41,6 +41,10 @@ https://ovofast.com/#/dashboard
 
 see scoop.md
 
+## [git]
+
+core.autocrlf=true
+
 ## down_xz_N_m3u8DL-setting.html
 
 see m3u8dl.html
@@ -57,14 +61,21 @@ background60 acrylic80
 
 PowerShell Admin
 
+## [setting.proxy.port]
+
+- SwitchyOmega
+- qbittorrent
+- scoop config proxy localhost:port
+- git http.proxy & https.proxy as socks5://localhost:port
+- telegram
 
 ## [setting]
 
-7zip
+~~ 7zip 关联文件类型 ~~  有 nanazip 可以跳过
 
 everything.server
 
-eartrumpet.start_with_os_reg
+~~ eartrumpet.start_with_os_reg ~~
 
 snipaste.shortcut
 
