@@ -104,7 +104,7 @@ scoop install qbittorrent-enhanced aria-ng-gui neatdownloadmanager # emule motri
 # main
 scoop install sing-box v2ray xray
 # extras/
-scoop install clash-verge-rev v2rayn telegram discord # or https://discord.com/app
+scoop install clash-nyanpasu clash-verge-rev v2rayn telegram discord # or https://discord.com/app
 
 # book picture
 # extras/
@@ -115,7 +115,7 @@ scoop install neeview # sumatrapdf
 # main/
 scoop install youtube-dl yt-dlp # ffmpeg
 # extras/
-scoop install youtube-dl-gui vlc # mpv mpv.net
+scoop install youtube-dl-gui vlc k-lite-codec-pack-full-np # mpv mpv.net
 # potplayer
 # scoop install potplayer madvr nonportable/lav-filters-megamix-np
 
