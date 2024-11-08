@@ -2,7 +2,7 @@
 # [scoop]
 
 ```pwsh
-scoop export > .\plaintext\workspace.json
+scoop export > .\plaintext\workspace.scoop.json
 ```
 
 ## choose dir (admin)
@@ -109,13 +109,18 @@ scoop install clash-nyanpasu clash-verge-rev v2rayn telegram discord # or https:
 # book picture
 # extras/
 scoop install neeview # sumatrapdf
-# picview 使用体验不是很好 官网说和7z配合能实现压缩包看图 但实际有问题？
+# imageglass    Star 7K CSharp
+# jpegview-fork Star 2k Cpp
+# qview         Star 2k Cpp
+# picview       Star 1k CSharp 使用体验不是很好 官网说和7z配合能实现压缩包看图 但实际有问题？
 
 # video
 # main/
-scoop install youtube-dl yt-dlp # ffmpeg
+scoop install yt-dlp # ffmpeg youtube-dl
 # extras/
-scoop install youtube-dl-gui vlc k-lite-codec-pack-full-np # mpv mpv.net
+scoop install youtube-dl-gui mpv # mpv.net k-lite-codec-pack-full-np vlc
+# nonportable
+scoop install icaros-np
 # potplayer
 # scoop install potplayer madvr nonportable/lav-filters-megamix-np
 
