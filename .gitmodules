@@ -1,0 +1,3 @@
+[submodule "plaintext/mpv-install"]
+	path = plaintext/mpv-install
+	url = git@github.com:rossy/mpv-install.git
