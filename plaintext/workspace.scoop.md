@@ -3,6 +3,7 @@
 
 ```pwsh
 scoop export > .\plaintext\workspace.scoop.json
+scoop import .\plaintext\workspace.scoop.json
 ```
 
 ## choose dir (admin)
@@ -87,6 +88,8 @@ sudo scoop install vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2
 
 系统体验增强
 
+or just use 'export/import'
+
 ```
 # system clean program
 # extras/
@@ -98,7 +101,7 @@ scoop install memreduct hasher
 # main/
 scoop install n-m3u8dl-cli
 # extras/
-scoop install qbittorrent-enhanced aria-ng-gui neatdownloadmanager # emule motrix
+scoop install qbittorrent-enhanced motrix aria-ng-gui neatdownloadmanager # emule
 
 # proxy
 # main
