@@ -4,6 +4,7 @@
 
 1. 文件-首选项-配置代码片段
 1. input a name and edit file
+1. see [VisualStudioCode-snippet](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 1. a help website [snippet-generator](https://snippet-generator.app/?description=&tabtrigger=&snippet=%0A&mode=vscode)
 
 ## Example
@@ -11,6 +12,20 @@
 workspace
 ```json
 {
+	"c_include_once":{
+		"scope": "c,cpp",
+		"prefix": "include_once",
+		"body": [
+			"#pragma once",
+			"#ifndef ${1:__MACRO_NAME__}",
+			"#define ${1:__MACRO_NAME__}",
+			"",
+			"$0",
+			"",
+			"#endif",
+		],
+		"description": "避免文件被 include 多次 1. `ifndef` 是语言标准，兼容性好且灵活，但依赖宏名不冲突 2. `pragma once` 部分老编译器不支持，优点是编译快，不会扫描全文件"
+	},
 	"rust_test_mod": {
 		"scope": "rust",
 		"prefix": "test_mod",
