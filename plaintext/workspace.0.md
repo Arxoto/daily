@@ -65,8 +65,9 @@ PowerShell Admin
 
 - SwitchyOmega
 - qbittorrent
-- scoop config proxy localhost:port
-- git http.proxy & https.proxy as socks5://localhost:port
+- scoop config proxy localhost:{port}
+- git config --global http.proxy socks5://localhost:{port}
+- git config --global https.proxy socks5://localhost:{port}
 - telegram
 
 ## [setting]
@@ -79,10 +80,13 @@ everything.server
 
 snipaste.shortcut
 
+## MPV
+
+config and input see -> workspace.video.mpv.md
+
 ## K-Lite Codec Pack
 
 mpc-hc64 shortcut see -> workspace.video.k_lite_codec.ini
-
 
 ## VLC
 
