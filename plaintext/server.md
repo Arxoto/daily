@@ -142,29 +142,41 @@ python -m http.server 9000
 # 需要解决局域网ssl证书的问题
 # 思路 每个终端导入证书
 # ================================================================================
-# 包括跟证书及服务证书
-openssl genrsa -out server.key 1024
-openssl req -new -key server.key -out server.csr
-openssl genrsa -out ca.key 1024
-openssl req -new -key ca.key -out ca.csr
-openssl x509 -req -in ca.csr -signkey ca.key -out ca.crt
-openssl x509 -req -CA ca.crt -CAkey ca.key -CAcreateserial -in server.csr -out server.crt
+# 证书文件
+# *.key 私钥 Private Key 其对应的公钥存在于证书和证书签名请求中
+# *.crt 证书 Linux 中的叫法 Certificate
+# *.cer 证书 Windows 中的叫法
+# *.csr 证书签名请求 包含证书持有人的信息 Certificate Signing Request 仅 CA 机构需要
+# *.crl 证书吊销列表 Certificate Revocation List
+# *.pem 本质是 base64 编码方式 key cert csr 均可以使用该编码方式
+# *.der 本质是二进制编码方法 同 pem 
 # ================================================================================
-# 只有证书（用自签名证书当做服务器证书）
-openssl genrsa -out server.key 1024
-openssl req -new -key server.key -out server.csr
-openssl x509 -req -in server.csr -out server.crt -signkey server.key -days 3650
+# 生成根证书和服务端证书
+# 根证书（可直接当做服务端证书）
+openssl genrsa -out ca.key 2048 # 生成私钥
+openssl req -new -key ca.key -out ca.csr # 生成证书请求文件 需要交互输入填写信息
+openssl x509 -req -days 3650 -in ca.csr -signkey ca.key -out ca.crt # 生成自签名CA根证书
 # ================================================================================
-# 首先使用以下命令生成一个证书密钥对 key.pem 和 cert.pem，它将有效期约10年（准确地说是3650天）
-openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+# 生成服务端证书 前提要先做上一步生成根证书
+openssl genrsa -out server.key 2048
+openssl req -new -key server.key -out server.csr
+# 模拟 CA 机构 签发证书
+# CAcreateserial: Create CA serial number file if it does not exist
+openssl x509 -req -days 3650 -CA ca.crt -CAkey ca.key -CAcreateserial -in server.csr -out server.crt
+# ================================================================================
+# 直接生成密钥签名 noenc 表示不加密私钥 也叫做 nodes(deprecated)
+openssl req -x509 -newkey rsa:2048 -noenc -days 3650 -keyout key.pem -out cert.pem
+# pem 转 der
 openssl x509 -inform pem -in cert.pem -outform der -out cert.cer
+# 证书请求文件 信息参考
 # Country Name (2 letter code) [AU]:cn
 # State or Province Name (full name) [Some-State]:zhejiang
 # Locality Name (eg, city) []:hangzhou
 # Organization Name (eg, company) [Internet Widgits Pty Ltd]:wom
 # Organizational Unit Name (eg, section) []:dev
 # Common Name (e.g. server FQDN or YOUR name) []:jm
-# Email Address []:myphone@meizu.com
+# Email Address []:xxx@wom.com
+# 下面可直接回车跳过
 # ================================================================================
 # 然后便可以起服务了 下面两个命令都可以，后者会自动打开默认浏览器运行页面
 http-server -S -C cert.pem # npm install --global http-server
