@@ -2,7 +2,9 @@
 
 https://www.nexusmods.com/skyrimspecialedition/mods/164
 
-## Magic Effect
+摁住 Ctrl 可以打开多个 record 方便拖拽复制（仅同一个ESP内）
+
+## Magic Effect 魔法效果
 
 see https://ck.uesp.net/wiki/Magic_Effect
 
@@ -27,7 +29,7 @@ Magic Effect Data               效果
             No Death Dispel  如果目标已死亡效果也仍然触发
             No Duration  没有持续时间，瞬时触发
             No Hit Event  不会触发命中事件，主要用于潜行系技能
-            No Magnitude  效果不使用 Magnitude 字段（？）
+            No Magnitude  效果不使用 Magnitude 字段（效果力度，如作为伤害参数）
             No Area  取消区域判定
             Painless  无痛，如果同时选中 Hostile 则目标不会喊疼，如果目标是玩家不会出现视觉模糊和呻吟
             Gory Visuals  没有使用，没效果
@@ -103,4 +105,134 @@ SNDD - Sounds
 DNAM - Magic Item Description  描述 <mag> 效果大小（增幅） <dur> 持续时间 <area> 范围
 Conditions
 ```
+
+## Spell 法术
+
+```
+MDOB - Menu Display Object  菜单显示效果
+ETYP - Equipment Type       装备类型
+DESC - Description
+SPIT - Data
+    Base Cost       基础消耗
+    Flags
+    Type
+    Charge Time     蓄力时间
+    Cast Type       消耗类型  参考 Magic_Effect 的 Casting Type  如 Fire_and_Forget
+    Target Type     目标类型  参考 Magic_Effect 的 Delivery      如 Target_Location
+    Cast Duration
+    Range
+    Half-cost Perk
+Effects             造成的魔法效果 可以有多个 且魔法效果内设定条件 达到根据不同条件施放不同效果
+    Effect
+        EFID - Base Effect  对应魔法效果ID
+        EFIT- EFIT
+            Magnitude       效果力度
+            Area            效果范围
+            Duration        持续时间
+        Conditions          生效条件
+```
+
+## Object Effect 附魔
+
+```
+ENIT - Effect Data
+    Enchantment Cost     附魔消耗
+    Flags
+    Cast Type            消耗类型  参考 Magic_Effect 的 Casting Type
+    Enchantment Amount   附魔数量
+    Target Type          目标类型  参考 Magic_Effect 的 Delivery
+    Enchant Type         附魔类型
+    Charge Time          充能时长
+    Base Enchantment     基础附魔
+    Worn Restrictions    破坏限制  武器类设为空 盔甲类影响可附魔部位
+Effects
+    Effect
+    EFID - Base Effect  对应 Magic_Effect ID
+    EFIT- EFIT
+        Magnitude       效果力度
+        Area            效果范围
+        Duration        持续时间
+    Conditions          生效条件
+        Condition
+```
+
+## Weapon 武器
+
+todo
+
+## Armor Addon 盔甲插件
+
+盔甲对应模型，男性女性、第一人称第三人称
+
+一个身体对应多个 Armor_Addon 足、手、身
+
+## Armor 盔甲 同时身体也属于这里
+
+```
+KWDA - Keywords
+    种类 ArmorLight轻甲 ArmorHeavy重甲
+    材质 ArmorMaterialXxx
+    部件 ArmorBoots足 ArmorCuirass身 ArmorGauntlets手 ArmorHelmet头
+    贩卖 VendorItemXxx
+Armature
+    MODL - Model FileName  对应 ArmorAddon ID
+```
+
+## Constructible Object 可锻造物品
+
+```
+Items (sorted)        消耗材料 可以有多种
+    Item
+        CNTO - Item
+            Item      消耗材料
+            Count     消耗数量
+        COED - Extra Data
+Conditions            强化已附魔装备的条件 可以有多个
+    Condition
+        CTDA - CTDA
+            Type
+            Comparison Value - Float
+            Function
+            xxxx
+        CIS 1 - Parameter #1
+        CIS2 - Parameter #2
+CNAM - Created Object        锻造产品
+BNAM - Workbench Keyword     锻造台关键字
+NAMI - Created Object Count  锻造产品数量
+```
+
+## ESM ESP ESL 转换
+
+插件分类
+
+- ESM Elder_Scrolls_Master
+- ESP Elder_Scrolls_Plugin
+- ESL Elder_Scrolls_Light_Plugin
+
+引擎插件使用 FormID 标记不同记录 record
+
+FormID 格式为 8位 16进制数，一个 record 表示一个最基本的游戏组成元素，如魔法效果、法术、武器、装备、套装、NPC等等，且能相互引用
+
+对于ESM、ESP，将其前两位作为插件的ID，随着插件的排序而改变，插件必须排在其依赖插件的后面，若记录有覆盖，则后面的生效
+
+因此引擎允许256个插槽（00-FF，16^2），实际能够加载插件数需减去官方的本体和DLC等
+
+同时一个插件允许内部有 16^(8-2) 个记录，绝大多数模组，包括官方本体DLC都用不完这么多，因此存在浪费并且限制了插件加载数量
+
+特殊的，FE加载顺序槽是专为ESL保留的，ESL在使用后面3位做ESL的排序，即最多允许加载 4096(16^3) 个 ESL ，而每个 ESL 内最多定义 4096 个记录
+
+综上所述，ESM+ESP不能超过254(FD)，FE是ESL插件共用的一个排序位置，而FF则是临时引用需要占用的，游戏里随机事件刷出来的人物用控制台点击就可以看到FF开头。
+
+此外，对于排序来说，ESM必须在最前面，而后是ESP，最后是ESL。
+
+特殊的，ESP可被标记为ESM/ESL（不冲突可同时标记，同理ESL也可标记为ESM），当ESP标记为ESM时，加载顺序等同ESM，当ESP标记为ESL时（ESPFE），记录上限等同ESL。
+
+### 使用 SSE Edit 将 ESP 转换为 ESL
+
+本质上是将 ESP 标记为 ESL
+
+1. MO 中 SseEdit “参数”添加" -PseudoESL"（实测不加好像也行，但教程都这么说，这里也记录着）
+1. 待 SseEdit 加载完成
+1. 右键 ESP 选择 "compact form id for esl" （注意！会导致 FormID 变更，存档损坏，且依赖该ESP的其他插件可能受影响，也许一起加载会自动处理，但没验证过）
+1. 选择 Header - RecordFlags - 勾选"ESL"
 

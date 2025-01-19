@@ -10,6 +10,7 @@ https://ovofast.com/#/dashboard
 
 - pwsh
 - VSCode
+  - VSCode 异常错误时 可清理 C:\Users\xxx\AppData\Roaming\Code\User 下文件
 - OfficeTool or https://github.com/OdysseusYuan/LKY_OfficeTools
 - IDM + https://github.com/lstprjct/IDM-Activation-Script  可用 NDM 代替
 - ~~ HoneyView + Bandizip ~~  现在压缩包软件安装界面有广告不喜欢 【压缩包里连续看图】
