@@ -1,5 +1,9 @@
 # 上古卷轴5 天际
 
+参考 https://fkmods.freeflarum.com/d/9/5
+
+参考 https://api.xiaoheihe.cn/v3/bbs/app/api/web/share?link_id=129162560
+
 ## Mod Organizer
 
 模组管理工具，基于虚拟文件系统极大优化了各种模组的覆盖冲突问题
@@ -35,6 +39,15 @@ ENB 预设下载
 - https://www.nexusmods.com/skyrimspecialedition/mods/categories/97/
 
 区别于普通Mod，安装在本体根目录下，故单独列出
+
+## Community Shaders
+
+https://www.nexusmods.com/skyrimspecialedition/mods/86492
+
+社区着色器，与 ENB 不兼容，区别如下
+
+- ENB 较为成熟，社区有大量预设，画面表现好，性能优化差
+- 社区着色器 有革命性的独门技术突破，更新活跃，画面表现稍欠、性能优化好（目前来说），结构上是普通模组方便管理
 
 ## SKSE
 
