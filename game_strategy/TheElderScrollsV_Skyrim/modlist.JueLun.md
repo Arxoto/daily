@@ -259,7 +259,7 @@ https://pan.quark.cn/s/b40a9a9b5a20#/list/share 社区分享完整整合包
 - y [身体服装工作室-BodySlide and Outfit Studio](https://www.nexusmods.com/skyrimspecialedition/mods/201)
 - y [人物身形-Caliente's Beautiful Bodies Enhancer](https://www.nexusmods.com/skyrimspecialedition/mods/198)
 - y [物理身形-CBBE 3BA](https://www.nexusmods.com/skyrimspecialedition/mods/30174)
-- y [人物高模头模-High Poly Head](https://ww7.vectorplexus.com/files/file/283-high-poly-head/?usid=23&utid=7693851381)
+- y [人物高模头模-High Poly Head](https://vectorplexis.com/files/file/283-high-poly-head/)
 - y [女性表情动画-Expressive Facial Animation Female Edition](https://www.nexusmods.com/skyrimspecialedition/mods/19181)
 - y [男性表情动画-Expressive Facial Animation Male Edition](https://www.nexusmods.com/skyrimspecialedition/mods/19532)
 - y [富有表现力的面部-Expressive Facegen Morphs SE](https://www.nexusmods.com/skyrimspecialedition/mods/35785)
