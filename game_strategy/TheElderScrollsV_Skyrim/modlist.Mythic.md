@@ -13,12 +13,18 @@
 
 - [BodySlide and Outfit Studio](https://www.nexusmods.com/skyrimspecialedition/mods/201)
 - [XP32 Maximum Skeleton Special Extended](https://www.nexusmods.com/skyrimspecialedition/mods/1988)
+  - choose Minimal
 - CBPC 无需安装 整合完全包含
 - [SMP-NPC crash fix](https://www.nexusmods.com/skyrimspecialedition/mods/91616)
+  - not needed in version 1.5.97, see [posts in nexusmods](https://www.nexusmods.com/skyrimspecialedition/mods/91616?tab=posts)
 - [Faster HDT-SMP](https://www.nexusmods.com/skyrimspecialedition/mods/57339)
+  - use default options
 - [Faster HDT-SMP - Ultra Performance Config](https://www.nexusmods.com/skyrimspecialedition/mods/89992)
 - [Caliente's Beautiful Bodies Enhancer](https://www.nexusmods.com/skyrimspecialedition/mods/198)
+  - choose "Thin + Trimmed Brows" in "Eyebow Options"
 - [CBBE 3BA](https://www.nexusmods.com/skyrimspecialedition/mods/30174)
+  - choose "No SOS" in "SOS Physics"
+  - choose "SSS Black" in "Vagina - SSS"
 - [Bijin Skin CBBE](https://www.nexusmods.com/skyrimspecialedition/mods/20078)
 - 非高模的捏脸预设 [Follower-Healer Racemenu Preset](https://www.nexusmods.com/skyrimspecialedition/mods/58030)
 
