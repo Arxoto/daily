@@ -8,6 +8,10 @@ https://open.spotify.com/
 
 https://github.com/WXRIW/Lyricify-App/releases
 
+## 歌单迁移
+
+https://www.tunemymusic.com/zh-CN/home
+
 ## 【音质】配置
 
 - 【串流播放音质】高
