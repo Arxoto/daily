@@ -4,6 +4,16 @@ https://www.nexusmods.com/skyrimspecialedition/mods/164
 
 摁住 Ctrl 可以打开多个 record 方便拖拽复制（仅同一个ESP内）
 
+## 安装方式
+
+see https://magicskyrim.net/archives/5764
+
+1. 解压SSEedit至任意位置
+1. MO2左侧新建一个空MOD文件夹，名叫 SseEditOutput
+1. MO2可执行程序里指定 SSEEdit.exe 位置
+1. “参数”里填入 " -cp:utf-8"（注意前面有空格）
+1. “在MOD中创建文件夹代替overwrite中”指定为刚刚新建的 SseEditOutput
+
 ## Magic Effect 魔法效果
 
 see https://ck.uesp.net/wiki/Magic_Effect

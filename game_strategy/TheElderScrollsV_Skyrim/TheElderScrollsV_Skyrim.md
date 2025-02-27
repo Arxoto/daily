@@ -75,10 +75,10 @@ ESP 编辑器
 
 在 MO 中打开建议在“参数”中填写 " -cp:utf-8" （注意前面有空格）以支持中文正常显示
 
-详见 file://./SseEdit/README.md
+详见 file://./SseEdit/SseEdit.md
 
 ## NifSkope
 
 NIF 网格模型编辑器
 
-详见 file://./NifSkope/README.md
+详见 file://./NifSkope/NifSkope.md
