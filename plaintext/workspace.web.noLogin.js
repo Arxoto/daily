@@ -34,3 +34,25 @@
         GM_addStyle('.tieba-custom-pass-login {display:none !important}');
     }
 })();
+
+/*
+uBlock Origin
+
+! https://cloud.tencent.com
+cloud.tencent.com##.tea-bubble__inner
+
+! https://www.gamersky.com
+www.gamersky.com##.pcWuKongCode
+
+! https://www.jianshu.com
+! www.jianshu.com##._23ISFX-mask:has-text("扫码")
+! www.jianshu.com##._23ISFX-wrap._23ISFX-wrap-middle:has-text("扫码")
+
+! https://blog.csdn.net
+blog.csdn.net##.passport-login-container
+blog.csdn.net##.false.passport-login-tip-container
+
+! https://zhuanlan.zhihu.com
+zhuanlan.zhihu.com##.css-zr60jh
+
+*/
