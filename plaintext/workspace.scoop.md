@@ -69,7 +69,7 @@ develop environment 开发环境和游戏环境
 
 ```
 # main/
-scoop install gcc mingw cmake rustup-msvc python go nodejs pnpm # 由 rustup 管理 rust & cargo
+scoop install gcc mingw cmake ninja rustup-msvc python go nodejs pnpm # 由 rustup 管理 rust & cargo
 # java/
 scoop install openjdk17 # openjdk8-redhat
 # versions/
@@ -166,7 +166,9 @@ scoop install qtscrcpy
 ```
 # extras/
 # 绘图 矢量 位图
-scoop install inkscape krita
+scoop install inkscape krita pixelorama
+# pixelorama 是使用 Godot 制作的免费开源 2D 精灵编辑器
+# libresprite 是 Aseprite 的免费开源分支
 # 视频音频
 scoop install shotcut audacity
 # 3D建模
