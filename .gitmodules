@@ -1,3 +1,6 @@
 [submodule "plaintext/mpv-install"]
 	path = plaintext/mpv-install
-	url = git@github.com:rossy/mpv-install.git
+	url = git@github.com:Arxoto/mpv-install.git
+[submodule "scripts/content_merge"]
+	path = scripts/content_merge
+	url = git@github.com:Arxoto/content_merge.git
