@@ -69,6 +69,33 @@ workspace
 			""
 		],
 		"description": ""
+	},
+	"python_log_get": {
+		"scope": "python",
+		"prefix": "log_get",
+		"body": [
+		    "import logging",
+		    "",
+		    "",
+		    "LOG = logging.getLogger()",
+		    "",
+		    "",
+		    ""
+		],
+		"description": ""
+	},
+	"python_log_init": {
+		"scope": "python",
+	    "prefix": "log_init",
+	    "body": [
+	      	"logging.basicConfig(",
+	      	"    format=\"%(asctime)s [%(name)s::%(levelname)s] %(message)s\",",
+	      	"    level=logging.INFO,",
+	      	")",
+			"",
+			""
+	    ],
+	    "description": ""
 	}
 }
 ```
